@@ -2,11 +2,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.container{
-    max-width: 1140px;
-    width: 100%;
-    margin:0 auto;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 a{
     text-decoration: none;
@@ -19,4 +20,259 @@ img{
     width: auto;
     vertical-align: middle;
 }
+h1{
+    color: #272727;
+    font-size: 60px;
+    font-weight: 800;
+}
+h2{
+    color: #272727;
+    font-size: 35px;
+    font-weight: 800;
+}
+h5{
+    color: #272727;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    text-decoration: underline;
+}
+h4{
+    color: #272727CC;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+p{
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 16px;
+    line-height: 25px;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+.primary-btn{
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #E55473;
+    padding: 20px 40px;
+    border: none;
+}
+.title-area {
+	width: 100%;
+	text-align: center;
+}
+.title-area h2 span{
+	color: #E55473;
+}
+.title-area p{
+	margin-top: 18px;
+}
+.title-area .primary-btn{
+	margin-top: 25px;
+}
 /* === Global Css Area End === */
+
+/* === Header Section Css Area Start === */
+.header-section {
+	width: 100%;
+	background: #E554731A;
+    position: relative;
+    overflow: hidden;
+}
+.banner-area {
+	width: 100%;
+	/* min-height: 850px; */
+    height: 100vh;
+	display: flex;
+	gap: 90px;
+	align-items: center;
+	padding-top: 50px;
+}
+.banner-area img {
+	width: 600px;
+	height: 95vh;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+    object-fit: contain;
+}
+.banner-area .hero p{
+	margin: 30px 0;
+}
+/* === Header Section Css Area End === */
+
+/* === Featured Flower Section Css Area Start === */
+.featured-flower-section {
+	width: 100%;
+	background: #fff;
+	padding: 100px 0;
+}
+.featured-flower-area {
+	width: 100%;
+	margin-top: 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.featured-flower-area .single-flower {
+	width: 30%;
+    text-align: center;
+}
+.featured-flower-area .single-flower .image {
+	width: 100%;
+	height: 430px;
+	background: #A7216226;
+	border-top-right-radius: 180px;
+	border-top-left-radius: 180px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.featured-flower-area .single-flower .image.second {
+    background: #0597A026;
+}
+.featured-flower-area .single-flower .image.third {
+    background: #477D1126;
+}
+.featured-flower-area .single-flower .image.second img{
+    bottom: 45px;
+}
+.featured-flower-area .single-flower .image img {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 80%;
+}
+/* === Featured Flower Section Css Area End === */
+
+/* === Shop Info Section Css Area Start === */
+.shop-info-section {
+	width: 100%;
+	background: #fff;
+}
+.shop-info-area {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	background: #2727270D;
+	min-height: 280px;
+	align-items: center;
+	border-radius: 8px;
+}
+.shop-info-area .single-info img{
+	width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+/* === Shop Info Section Css Area End === */
+
+/* === Hot Deal Section Css Area Start === */
+.hot-deal-section {
+	width: 100%;
+	margin: 100px 0;
+	background: #E554730D;
+    padding: 70px;
+}
+.hot-deal-area {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.hot-deal-area .title-area{
+	width: 50%;
+
+}
+/* === Hot Deal Section Css Area End === */
+
+/* === Instagram Section Css Area Start === */
+.instagram-section {
+	width: 100%;
+	background: #fff;
+}
+.instagram-area {
+	width: 100%;
+	display: flex;
+	gap: 20px;
+	margin-top: 40px;
+}
+.instagram-area .single-insta-flower{
+    width: 25%;
+}
+.instagram-area .single-insta-flower img{
+    width: 100%;
+}
+/* === Instagram Section Css Area End === */
+
+/* === Latest Deals Section Css Area Start === */
+.latest-deal-section {
+	width: 100%;
+	padding: 100px 0;
+	background: #fff;
+}
+.latest-deal-area {
+	border-radius: 8px;
+	background: url("../image/latest-bg.png"), lightgray;
+	width: 100%;
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.latest-deal-area .title-area span{
+	color: #27272799;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 6px;
+    display: inline-block;
+}
+.latest-deal-area .latest-deal-input {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+.latest-deal-area .latest-deal-input input{
+	width: 600px;
+	height: 60px;
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 16px;
+    padding-left: 22px;
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+}
+/* === Latest Deals Section Css Area End === */
+
+/* === Footer Section Css Area Start === */
+.footer-section {
+	width: 100%;
+	background: #111010;
+	padding: 100px 0;
+}
+.footer-area .title-area p,
+.footer-area .title-area h2{
+	color: #FFFFFFE5;
+}
+.footer-area .title-area h2{
+	font-size: 42px
+}
+.footer-area .copy-right {
+	color: #FFFFFF66;
+	font-size: 16px;
+	margin-top: 30px;
+	display: block;
+	text-align: center;
+}
+/* === Footer Section Css Area End === */
